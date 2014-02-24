@@ -2371,9 +2371,13 @@ div.gallery dl.gallery-item dt.gallery-icon a img {
 }
 
 dl.gallery-item.masonry-brick {
-	padding: 10px 1%;
+	padding: 10px;
 }
 
+/*dl.gallery-item.masonry-brick {
+	padding: 10px 1%;
+}
+*/
 div.menu-down {
 	clear: both;
 	background: white;
@@ -2534,6 +2538,17 @@ body.home .admin-bar .site-header.header-shrink {
   width: auto;
 }
 
+/*  Prada: Return navigation to normal */
+@media screen and (max-width: 992px){
+	body.home .site-header {
+		position: relative;
+		background: white;
+	}
+
+	body.home .site-description {
+		color: rgb(169, 169, 169);
+	}
+}
 
 div.widgetized-sections section#text-2.widget_text div.inside {
 	padding: 0px 0px;
