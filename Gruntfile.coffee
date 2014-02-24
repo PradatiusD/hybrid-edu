@@ -7,16 +7,14 @@ module.exports = (grunt) ->
 					port: 22
 					authKey: 'key1'
 				src: 'theme'
-				dest: '/wp-content/themes/hybrid-education/'
-				# exclusions: ['homepage/*.js']
+				dest: 'wp-content/themes/hybrid-dev'
+				# dest: 'wp-content/themes/hybrid-education'
 		watch:
-			# styles:
-			# 	files: '*.sass'
-			# 	tasks: ['sass']
-			# 	options:
-			# 		debounceDelay: 250
+			styles:
+				files: 'theme/*'
+				tasks: ['sftp-deploy']
 	)
 
 	grunt.loadNpmTasks('grunt-contrib-watch')
 	grunt.loadNpmTasks('grunt-sftp-deploy')
-	grunt.registerTask('default', ['sftp-deploy'])
+	grunt.registerTask('default', ['watch'])
