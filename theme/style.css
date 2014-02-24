@@ -2370,14 +2370,15 @@ div.gallery dl.gallery-item dt.gallery-icon a img {
 	border: none;
 }
 
+#gallery-2 .gallery-item {
+  margin-bottom: 5px !important;
+  margin-top: 5px !important;
+}
+
 dl.gallery-item.masonry-brick {
 	padding: 10px;
 }
 
-/*dl.gallery-item.masonry-brick {
-	padding: 10px 1%;
-}
-*/
 div.menu-down {
 	clear: both;
 	background: white;
