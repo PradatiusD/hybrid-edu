@@ -2366,30 +2366,23 @@ div.gallery dl.gallery-item dt.gallery-icon a img {
 	width:292px;
 }
 
-#gallery-2 img {
-	border: none;
-}
-
-#gallery-2 .gallery-item {
-  margin-bottom: 5px !important;
-  margin-top: 5px !important;
-}
-
 dl.gallery-item.masonry-brick {
-	padding: 10px;
+  padding: 10px;
 }
+
 
 div.menu-down {
 	clear: both;
 	background: white;
 	float: none;
 }
-	
-	
+
 .main-navigation {
 	float: right;
 	font-size: 15px;
 }
+
+
 
 .grids [class*="grid-"] {
 	display: inline-block;
@@ -2926,6 +2919,35 @@ section.services-section .grids [class*="grid-"] {
 }
 
 
+
+/* Begin Homepage Slider Improvements */
+@media all and (max-width:751px){
+  body.home #slider h2 {
+    font-size: 3em;
+  }
+  body.home .section-slider .inside, body.home #slider {
+    height: 400px;
+  }
+
+  body.home .flexslider .slides {
+    height: 100%;
+  }
+
+  body.home .flexslider .slides > li {
+    height: 100%;
+  }
+
+  body.home .flexslider .slides img{
+    min-width: 680px;
+    display: block;
+    height: 100%;
+  }
+}
+
+@media all and (max-width:400px){
+  
+}
+/* End Homepage Slider Improvements */
 
 /* Mobile Navigation Setup */
 @media (min-width: 993px) {
